@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+        HTML{
+            height: 100%;
+            background: black;
+        }
 
+        DIV{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: auto;
+            width: 400px;
+            height: 400px;
+            background-color: black;
+            background-image: url(https://img-fotki.yandex.ru/get/3111/5091629.a2/0_85f54_7fb379e6_orig),linear-gradient(45deg,white 50%,
+            transparent 50%),
+            linear-gradient(-45deg, white 50%, transparent 50%);
+            background-repeat: no-repeat, repeat, repeat;
+            background-position: 50% -15%,
+                                 50% 50%,
+                                 50% 50%;
+                               
+                                 animation: move 1.68s infinite ease-out;
+        }
+        @keyframes move{
+            50% {
+                background-position: 0%
+                50% 95%,
+                50% 50%,
+                50% 50%;
+            }
+        }
+     </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
